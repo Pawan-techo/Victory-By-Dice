@@ -1,0 +1,129 @@
+.gamename {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+.logo{
+  width: 40px;
+}
+.header{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.container {
+  margin: 20px;
+  text-align: center;
+  justify-content: center ;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background: linear-gradient(to right, #5ddee5, #e45f92);
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Times new roman', cursive;
+  text-shadow: 2px 0 #f2f700;
+  font-size: 4rem;
+  color:black;
+}
+
+p {
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top:2px;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+.Total{
+  font-size: 2rem;
+}
+.input{
+  width: 20%;
+  margin-left: auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+.btn1{
+  width: 50px;
+  height: 29.2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn2{
+  margin-top: 50px;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+
+}
+.btn:hover{
+  background: green;
+  color: white;
+  text-transform: uppercase;
+}
+
+.dices{
+  margin:0px;
+}
+
+/* Dice roll animation */
+@keyframes roll {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+}
+
+.roll-animation {
+  animation: roll 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center; /* Center the content on smaller screens */
+  }
+h1{
+  font-size: 30px;
+}
+img{
+  width:20%
+}
+p{
+  font-size: 20px;
+}
+.Total{
+  font-size: 20px;
+}
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+}
